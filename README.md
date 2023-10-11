@@ -5,7 +5,7 @@ DAX (Data Analysis Expressions) is a formula language used in Power BI, Excel Po
 # SUMX:
 
 Description: Calculates the sum of an expression evaluated for each row in a table.
-Example:
+#Example:
 Total Sales = SUMX(Sales, Sales[Quantity] * Sales[Price])
 This calculates the total sales by multiplying the quantity and price for each row in the "Sales" table and then summing the results.
 
