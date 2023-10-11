@@ -1,18 +1,18 @@
 # DAX-Power-BI
 
-DAX (Data Analysis Expressions) is a formula language used in Power BI, Excel Power Pivot, and other Microsoft products for data modeling and analysis. It provides a variety of functions for working with data and creating calculated columns, measures, and tables. Here are some key DAX functions with examples and explanations:
+**DAX (Data Analysis Expressions)** is a formula language used in Power BI, Excel Power Pivot, and other Microsoft products for data modeling and analysis. It provides a variety of functions for working with data and creating calculated columns, measures, and tables. Here are some key DAX functions with examples and explanations:
 
 # SUMX:
 
 Description: Calculates the sum of an expression evaluated for each row in a table.
-# Example:
+** Example:**
 Total Sales = SUMX(Sales, Sales[Quantity] * Sales[Price])
 This calculates the total sales by multiplying the quantity and price for each row in the "Sales" table and then summing the results.
 
 # AVERAGE:
 
 Description: Calculates the average of a column of numeric values.
-# Example:
+**Example:**
 
 Average Sales Price = AVERAGE(Sales[Price])
 This calculates the average price of products in the "Sales" table.
