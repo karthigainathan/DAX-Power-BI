@@ -5,6 +5,7 @@
 # SUMX:
 
 **Description:** Calculates the sum of an expression evaluated for each row in a table.
+
 **Example:**
 Total Sales = SUMX(Sales, Sales[Quantity] * Sales[Price])
 This calculates the total sales by multiplying the quantity and price for each row in the "Sales" table and then summing the results.
@@ -12,9 +13,7 @@ This calculates the total sales by multiplying the quantity and price for each r
 # AVERAGE:
 
 **Description:** Calculates the average of a column of numeric values.
-**Example:**
-
-Average Sales Price = AVERAGE(Sales[Price])
+**Example:** Average Sales Price = AVERAGE(Sales[Price])
 This calculates the average price of products in the "Sales" table.
 
 COUNTROWS:
