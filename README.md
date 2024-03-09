@@ -27,3 +27,21 @@ This counts the number of rows in the 'Customer' table.
 # COUNTBLANK: Counts blank cells.
 =COUNTBLANK(Sales[Discount])
 This counts the number of blank or null values in the 'Discount' column of the 'Sales' table.
+
+
+
+
+# CALCULATE:Modifies the filter context for scalar calculations (e.g., aggregations).
+CALCULATE(SUM(Sales[Amount]), Sales[Region] = "North")
+
+The CALCULATE function is one of the most important functions in DAX. It allows you to change the filter context for a calculation and evaluate an expression in a different context.
+It can be used to modify row context (when used in calculated columns) or filter context (when used in measures).
+You can add, modify, or remove filters, and then calculate an expression based on the modified context.
+CALCULATE is commonly used to apply filters, perform calculations with different contexts, and control how calculations are aggregated.
+
+# Modifies the filter context for table calculations (e.g., filtering tables).
+CALCULATETABLE(Sales, Sales[Region] = "North")
+
+The CALCULATETABLE function is similar to CALCULATE, but it is specifically designed to change the filter context for tables rather than for scalar values.
+It evaluates an expression within a modified filter context and returns a table of results.
+CALCULATETABLE is useful when you want to apply filters to tables and perform calculations with the filtered tables.
